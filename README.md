@@ -23,8 +23,8 @@ For more detailed information about each template, see the README file in the co
 
 ## Contributing
 
-If you'd like to contribute to Templates for VS Code, we welcome your input. Please see the CONTRIBUTING.md file for instructions on how to get started.
+If you'd like to contribute to Templates for VS Code, we welcome your input.
 
 ## License
 
-Templates for VS Code is released under the MIT License.
+Templates for VS Code is released under the MIT-0 License.

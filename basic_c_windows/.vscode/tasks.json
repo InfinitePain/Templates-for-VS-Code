@@ -1,0 +1,63 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++ MinGW64 Build",
+            "command": "gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/bin/${fileBasenameNoExtension}.exe",
+                // Include additional libraries using the -I flag to specify their directories 
+                // and the -l flag to link them. For example, to use the ncurses library, 
+                // include its directory using -I and link it using -lncurses:
+                //
+                // ...,
+                // "-I",
+                // "C:/msys64/mingw64/include/ncurses",
+                // "-lncurses"
+                // ...,        
+            ],            
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "Task for MinGW64 compiler to build active file"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++ MSVS Build",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/Fo${fileDirname}/bin/",
+                "/Fd${fileDirname}/bin/vc140.pdb",
+                "/Fe${fileDirname}/bin/${fileBasenameNoExtension}.exe",
+                "${file}",
+                // Use the "/link" flag to specify additional libraries to link. 
+                // Use "/LIBPATH" to specify their directories. 
+                // For example, to link the ncurses library, use:
+                //
+                // "/link", 
+                // "/LIBPATH:c:/msys64/mingw64/lib", 
+                // "ncursesw.lib", 
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": "build",
+            "detail": "Task for MSVS compiler to build active file"
+        }
+    ]
+}
