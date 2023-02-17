@@ -29,7 +29,6 @@ The .vscode folder includes the following files:
         "kind": "build",
         "isDefault": true
     }
-    ]
     ```
     This will set the build task as the default task to run when the user executes the "Run Build Task" command or presses F7. If the user needs to include any libraries, they should add the proper flags to the `` `tasks.json` `` file. For more information on tasks and how to integrate with external tools, see the comments in the `` `tasks.json` `` file and refer to the [official documentation](https://code.visualstudio.com/docs/editor/tasks "Integrate with External Tools via Tasks").
 
