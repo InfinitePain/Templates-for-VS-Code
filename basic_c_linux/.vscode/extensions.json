@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "ms-vscode.cpptools-extension-pack",
+        "visualstudioexptteam.vscodeintellicode",
+        "visualstudioexptteam.intellicode-api-usage-examples",
+        "visualstudioexptteam.vscodeintellicode-completions"
+    ]
+}
