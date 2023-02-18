@@ -33,6 +33,7 @@ The .vscode folder includes the following files:
     This will set the build task as the default task to run when the user executes the "Run Build Task" command or presses F7. If the user needs to include any libraries, they should add the proper flags to the `` `tasks.json` `` file. For more information on tasks and how to integrate with external tools, see the comments in the `` `tasks.json` `` file and refer to the [official documentation](https://code.visualstudio.com/docs/editor/tasks "Integrate with External Tools via Tasks").
 
 - `` `launch.json` ``: The "launch.json" file contains the launch configuration for debugging in C/C++ projects. For more information on how to configure this file, check out the [official documentation](https://code.visualstudio.com/docs/editor/debugging#_debugger-extensions "Debugging").
+    
     Note that Bash is not a usable external terminal for debugging. If you are unable to debug your code, it is likely due to this limitation. To use an external terminal for debugging, you will need to install a terminal emulator such as gnome-terminal and set it as the default. Alternatively, you can use the integrated terminal by changing the value of the 'externalConsole' variable to false.
 
 ## bin Folder
