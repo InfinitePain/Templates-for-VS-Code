@@ -26,18 +26,6 @@
                 }
             ],
             "preLaunchTask": "C/C++ Linux Build"
-        },
-        {
-            "name": "Debug with gdb on gnome-terminal",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "runtimeExecutable": "gnome-terminal",
-            "args": [
-                "-e",
-                "gdb ${workspaceFolder}/bin/${fileBasenameNoExtension}.out"
-            ],
-            "preLaunchTask": "C/C++ Linux Build"
         }
     ]
 }
